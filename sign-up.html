@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian Cullen | Sign Up</title>
+    <style>
+
+        body {
+            display: grid;
+            place-items: center;
+            color: white;
+        }
+
+        .main__bg {
+        background-image: linear-gradient(-60deg, #404258 50%, #6b728e 50%);
+        animation: slide 3s ease-in-out infinite alternate;
+        height: 1000px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -50%;
+        right: -50%;
+        opacity: 0.5;
+        z-index: -1;
+        }
+
+        .layer1 {
+        animation-direction: alternate-reverse;
+        animation-duration: 4s;
+        }
+
+        .layer2 {
+        animation-duration: 5s;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(-25%);
+        }
+        100% {
+            transform: translateX(25%);
+            }
+        }
+    
+    </style>
+
+</head>
+<body>
+    
+    <div class="links" style="position: fixed; top: 0; right: 0; font-size: x-large;">
+        <a href="index.html" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black;">Home</a>
+        <a href="login.html" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black;">Login</a>
+    </div>
+    
+
+    <div class="signupform" style="text-align: center; font-size: xx-large;">
+        <form>
+            <br><label for="fullname">Full Name: </label><br>
+            <input type="text" id="fullname" name="fullname" style="font-size: large;"><br>
+            <label for="email">Email Address: </label><br>
+            <input type="text" id="email" name="email" style="font-size: large;"><br>
+            <label for="password">Password: </label><br>
+            <input type="password" id="password" name="password" style="font-size: large;"><br>
+            <br><input type="submit" value="Sign Up" style="font-size: large;">
+    
+        </form>
+    </div>
+    
+    <div class="main__bg"></div>
+    <div class="main__bg layer1"></div>
+    <div class="main__bg layer2"></div>
+
+</body>
+</html>
